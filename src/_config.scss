@@ -1,0 +1,13 @@
+@mixin font($cl, $sz, $wt){
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $cl;
+    font-weight: $wt;
+    font-size: $sz;
+    -webkit-font-smoothing: antialiased;
+}
+@mixin back($p, $s){
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: $p;
+    background-size: $s;
+}
