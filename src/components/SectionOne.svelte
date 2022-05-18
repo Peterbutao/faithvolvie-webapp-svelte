@@ -38,11 +38,10 @@
         .art{
             background-image: url('/assets/photo/photo1.jpg');
             @include back(center, cover);
-            background-color: rgba(0, 0, 0, 0.837);
+            background-color: rgba(0, 0, 0, 0.637);
             max-width: var(--mxw);
             margin: auto;
             border-bottom-left-radius: 1px;
-            animation: bg-anime 5s infinite alternate;
         
             
             .maintxt{   
