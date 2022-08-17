@@ -1,6 +1,6 @@
 <script>
+    export let data
     import {createEventDispatcher} from 'svelte';
-
     const dispatch =  createEventDispatcher()
 
     function back(){
@@ -24,22 +24,25 @@
         <main>
             <div class="mn">
                 <div class="card-container">
-                    {#each [0,1,2,3,4,5,6,7,8] as x  }
+                    {#each $data.video as x  }
 
                     <div class="card">
                         <div class="cd">
                             <div class="image">
-                                <div class="img" style="background-image: url('./assets/img/fefe.jpg');"></div>
-                                <!-- <img src="/assets/img/fefe (3).jpg" alt="faith selfie" > -->
+                                <!-- svelte-ignore a11y-media-has-caption -->
+                                <video width="320" height="240" controls>
+                                    <source src="{x.image}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                             <div class="content">
                                 <div class="cnt">
                                     <div class="cons">
                                         <!-- icon area -->
-                                        {x}
+                                        {x.date}
                                     </div>
                                     <div class="img-desc">
-                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <p>{x.title}</p>
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +99,7 @@
                             .cd{
                                 padding: 10px;
                                 .image{
-                                    background: var(--dp);
+                                    // background: var(--dp);
                                     
                                     // img{
                                     //     width: 100%;

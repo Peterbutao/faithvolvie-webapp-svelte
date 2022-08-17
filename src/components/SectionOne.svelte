@@ -16,7 +16,11 @@
                 <span>FAITH</span><span>LAKA.LAKA</span><span><strong>- 🖤 - </strong></span><span> PETER</span><span>butao </span>
             </h1>
             <p> love happened, <strong>SYML</strong></p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptatibus!</p>
+            <fieldset>
+
+                <p>when, the night has come and the moon is the only light we see. I know i wont be afraid, you will stand by me</p>
+                <p>BEN .E. KING</p>
+            </fieldset>
             <div class="line"></div>
 
         </div>

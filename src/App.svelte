@@ -1,7 +1,8 @@
 <script>
 	import Sectionone from "../src/components/SectionOne.svelte";	
 	import SectionTwo from '../src/components/SectionTwo.svelte';
-	
+	import {data} from "./stores/mainstore"
+	console.log($data.video)
 	let dark;
 
 	$: toggle = false;
@@ -61,7 +62,7 @@
 			</div>
 			{#if gallery === true}
 			<div class="sectiontwo">				
-				<SectionTwo on:toggleBack={toggleBackFunction} />
+				<SectionTwo data={data} on:toggleBack={toggleBackFunction} />
 			</div>
 			{/if}
 			
